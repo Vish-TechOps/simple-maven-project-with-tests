@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Code Quality Check') { 
             steps { 
-         #      git 'https://github.com/jglick/simple-maven-project-with-tests.git'
                sh "mvn clean package"
             }
         }
